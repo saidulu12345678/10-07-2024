@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./taskresp.html" method="post">
+        <fieldset>
+            <legend>Registration Form</legend>
+            <div>
+                <input type="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDynMpfDtSuXeMeiYX8ZvJ7A1n2VXovfLbYQ&s" width="300px" height="200px">
+            </div>
+        <div>
+            <label for="fname"><b>First Name</b></label><br>
+            <input type="text" id="fname" name="fname" pattern="[a-zA-Z]{5,10}" required title="alphabets are allowed">
+        </div><br>
+        <div>
+            <label for="lname"><b>Last Name</b></label><br>
+            <input type="text" id="lname" name="lname" pattern="[a-zA-Z]{2,11}" required title="alphabets are allowed">
+        </div><br>
+        <div>
+            <label for="date"><b>DOB</b></label><br>
+        <input type="date" id="date" name="dob">
+        </div><br>
+        <div>
+            <label for="password"><b>Password</b></label><br>
+            <input type="password" id="password" name="password" minlength="8"  pattern="[a-zA-Z\d!@#$%&_ ]+" required title="alphabets and digits,special character are allowed">
+        </div><br>
+        <div>
+            <label for="mail"><b>Email</b></label><br>
+            <input type="text" name="email" id="mail" pattern="[a-z@_.\d]+" required title="small letter,digits and spe character are allowed ">
+        </div><br>
+        <div>
+            <label for="qty"></label><b>quantity</b><br>
+            <input type="number" name="quantity" id="qty" min="2" max="20">
+            <br>
+
+            <input type="range"><br>
+            
+            <br>
+            <input type="color" name="color" id="color">
+        </div><br>
+        <div>
+            <label for="bt"><b>Button</b></label><br>
+            <input type="button" name="button" id="bt" value="click" onclick="alert('enter the details')">
+
+        </div><br>
+        <div>
+            <input type="reset" value="Reset">
+        </div><br>
+        
+        <div>
+            <input type="submit" value="Register">
+        </div>
+    </fieldset>
+    </form>
+</body>
+</html>

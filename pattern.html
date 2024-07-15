@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="../08-07-2024/loginresponse.html" method="post">
+        <div>
+            <label for="uname">single alphabets allowed</label><br>
+            <input type="text" id="uname" name="uname" pattern="[abc]" title="only single character are allowedthat are a,b,c">
+        </div><br>
+        <div>
+            <label for="uname">multiple alphabets allowed</label><br>
+            <input type="text" id="uname" name="uname" pattern="[abcxyz]+" title="multiple character are allowed">
+        </div><br>
+        <div>
+            <input type="submit" value="submit">
+        </div>
+    </form>
+</body>
+</html>
